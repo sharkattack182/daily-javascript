@@ -50,17 +50,49 @@
 // Solve Time: 5 min
 // Date: 1/7/2021
 
-const drinks = [
-    {name: "lemonade", price: 100},
-    {name: "milk", price: 70},
-    {name: "soda", price: 125}
-]
+// const drinks = [
+//     {name: "lemonade", price: 100},
+//     {name: "milk", price: 70},
+//     {name: "soda", price: 125}
+// ]
 
-function sortByPrice(drinks) {
-    drinks.sort((drink1,drink2) => drink1.price - drink2.price);
-    drinks.forEach((drink) => {
-        console.log(drink.name, drink.price)
-    })
+// function sortByPrice(drinks) {
+//     drinks.sort((drink1,drink2) => drink1.price - drink2.price);
+//     drinks.forEach((drink) => {
+//         console.log(drink.name, drink.price)
+//     })
+// }
+
+// sortByPrice(drinks)
+
+
+// Tuck in Array
+// Create a method in the person class whcih returns how another persons age compares.
+// Solve Time:
+// Date: 1/8/2021
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
 }
 
-sortByPrice(drinks)
+Person.prototype.compareAge = function(person2) {
+    if(this.age > person2.age) {
+        console.log(this.name + " is older than " + person2.name)
+    }
+    else if(this.age < person2.age) {
+        console.log(this.name + " is younger than " + person2.name)
+    } else {
+        console.log(this.name + " is the same age as " + person2.name)
+    }
+}
+
+const matt = new Person("matt", 29);
+const brian = new Person("brian", 22);
+const dan = new Person("dan", 26);
+const pat = new Person("pat", 26)
+
+
+matt.compareAge(brian);
+brian.compareAge(matt)
+dan.compareAge(pat);
