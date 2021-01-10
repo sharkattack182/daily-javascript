@@ -68,31 +68,31 @@
 
 // Tuck in Array
 // Create a method in the person class whcih returns how another persons age compares.
-// Solve Time:
+// Solve Time: < 10 min
 // Date: 1/8/2021
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-}
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
 
-Person.prototype.compareAge = function(person2) {
-    if(this.age > person2.age) {
-        console.log(this.name + " is older than " + person2.name)
-    }
-    else if(this.age < person2.age) {
-        console.log(this.name + " is younger than " + person2.name)
-    } else {
-        console.log(this.name + " is the same age as " + person2.name)
-    }
-}
+// Person.prototype.compareAge = function(person2) {
+//     if(this.age > person2.age) {
+//         console.log(this.name + " is older than " + person2.name)
+//     }
+//     else if(this.age < person2.age) {
+//         console.log(this.name + " is younger than " + person2.name)
+//     } else {
+//         console.log(this.name + " is the same age as " + person2.name)
+//     }
+// }
 
-const matt = new Person("matt", 29);
-const brian = new Person("brian", 22);
-const dan = new Person("dan", 26);
-const pat = new Person("pat", 26)
+// const matt = new Person("matt", 29);
+// const brian = new Person("brian", 22);
+// const dan = new Person("dan", 26);
+// const pat = new Person("pat", 26)
 
 
-matt.compareAge(brian);
-brian.compareAge(matt)
-dan.compareAge(pat);
+// matt.compareAge(brian);
+// brian.compareAge(matt)
+// dan.compareAge(pat);
