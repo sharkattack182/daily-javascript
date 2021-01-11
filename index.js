@@ -96,3 +96,26 @@
 // matt.compareAge(brian);
 // brian.compareAge(matt)
 // dan.compareAge(pat);
+
+
+
+// Largest Swap
+// Write a function that takes a two digit number and determines if its the largest of the to possible swaps
+// Solve Time: 
+// Date: 1/11/2021
+
+function numberSwap(number) {
+    let numString = JSON.stringify(number);
+    if(isNaN(number) || numString.length > 2 || numString.length < 2 ) {
+        console.log("must be a two digit number");
+        return
+    } else {
+        console.log(number)
+    }
+}
+
+numberSwap("matt");
+numberSwap(45);
+numberSwap(97);
+numberSwap(134);
+numberSwap(1);
