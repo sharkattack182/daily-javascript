@@ -110,7 +110,17 @@ function numberSwap(number) {
         console.log("must be a two digit number");
         return
     } else {
-        console.log(number)
+        var numArray = numString.split("");
+        var num1 = numArray[0];
+        var num2 = numArray[1];
+
+        if(num2 > num1) {
+            console.log("False");
+            return false
+        } else {
+            console.log("True")
+            return true
+        }
     }
 }
 
