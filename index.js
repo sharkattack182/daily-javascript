@@ -101,31 +101,62 @@
 
 // Largest Swap
 // Write a function that takes a two digit number and determines if its the largest of the to possible swaps
-// Solve Time: 
+// Solve Time: 15 min
 // Date: 1/11/2021
 
-function numberSwap(number) {
-    let numString = JSON.stringify(number);
-    if(isNaN(number) || numString.length > 2 || numString.length < 2 ) {
-        console.log("must be a two digit number");
-        return
-    } else {
-        var numArray = numString.split("");
-        var num1 = numArray[0];
-        var num2 = numArray[1];
+// function numberSwap(number) {
+//     let numString = JSON.stringify(number);
+//     if(isNaN(number) || numString.length > 2 || numString.length < 2 ) {
+//         console.log("must be a two digit number");
+//         return
+//     } else {
+//         var numArray = numString.split("");
+//         var num1 = numArray[0];
+//         var num2 = numArray[1];
 
-        if(num2 > num1) {
-            console.log("False");
-            return false
-        } else {
-            console.log("True")
-            return true
+//         if(num2 > num1) {
+//             console.log("False");
+//             return false
+//         } else {
+//             console.log("True")
+//             return true
+//         }
+//     }
+// }
+
+// numberSwap("matt");
+// numberSwap(45);
+// numberSwap(97);
+// numberSwap(134);
+// numberSwap(1);
+
+
+// Likes vs Dislikes
+// YouTube currently displays a like and a dislike button, allowing you to express your opinions about particular content. It's set up in such a way that you cannot like and dislike a video at the same time.
+// There are two other interesting rules to be noted about the interface:
+// 1. Pressing a button, which is already active, will undo your press.
+// 2. If you press the like button after pressing the dislike button, the like button overwrites the previous "dislike" state. The same is true for the other way round.
+// Create a function that takes an array of button inputs and returns the final state.
+// Difficulty: Medium
+// Date" 1/14/2021
+
+function likeOrDislike(array) {
+    let likeState;
+    let argumentsArray = []
+
+    var check = Array.isArray(array);
+    if(check == false) {
+        console.log("input must be an array");
+        return;
+    } else {
+        for (let i = 0; i < array.length; i++) {
+           if(array[i] == "Like" || array[i] == "Dislike") {
+               argumentsArray.push(array[i]);
+           }
         }
+        console.log(argumentsArray);
     }
 }
 
-numberSwap("matt");
-numberSwap(45);
-numberSwap(97);
-numberSwap(134);
-numberSwap(1);
+likeOrDislike(["Like", "Dislike", "SuperMan", "Like", "Hello"]);
+likeOrDislike(["Like", "Dislike"]);
