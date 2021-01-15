@@ -178,6 +178,7 @@
 // Write a function that returns n anonymous function which transforms its input by adding a particular suffix at the end
 // Diffuclty: Medium
 // Date: 1/5/2021
+// Solve Time: 5 min
 
 
 function addSuffix(suffix) {
@@ -188,4 +189,10 @@ function addSuffix(suffix) {
 
 var add_ly = addSuffix("ly");
 
-add_ly("hopeless")
+add_ly("hopeless");
+add_ly("total");
+
+var add_less = addSuffix("less");
+
+add_less("fear");
+add_less("ruth");
