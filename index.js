@@ -140,35 +140,52 @@
 // Difficulty: Medium
 // Date" 1/14/2021
 
-function likeOrDislike(array) {
-    let likeState;
-    let argumentsArray = []
+// function likeOrDislike(array) {
+//     let likeState;
+//     let argumentsArray = []
 
-    var check = Array.isArray(array);
-    if(check == false) {
-        console.log("input must be an array");
-        return;
-    } else {
-        for (let i = 0; i < array.length; i++) {
-           if(array[i] == "Like" || array[i] == "Dislike") {
-               argumentsArray.push(array[i]);
-           }
-        }
+//     var check = Array.isArray(array);
+//     if(check == false) {
+//         console.log("input must be an array");
+//         return;
+//     } else {
+//         for (let i = 0; i < array.length; i++) {
+//            if(array[i] == "Like" || array[i] == "Dislike") {
+//                argumentsArray.push(array[i]);
+//            }
+//         }
         
-        for (let t = 0; t < argumentsArray.length; t++) {
-            if(argumentsArray[t] == "Like" && likeState !== "Like") {
-                likeState = "Like"
-            } else if (argumentsArray[t] == "Dislike" && likeState !== "Dislike") {
-                likeState = "Dislike"
-            } else {
-                likeState = "Nothing"
-            }
+//         for (let t = 0; t < argumentsArray.length; t++) {
+//             if(argumentsArray[t] == "Like" && likeState !== "Like") {
+//                 likeState = "Like"
+//             } else if (argumentsArray[t] == "Dislike" && likeState !== "Dislike") {
+//                 likeState = "Dislike"
+//             } else {
+//                 likeState = "Nothing"
+//             }
             
-        }
-        console.log(likeState)
+//         }
+//         console.log(likeState)
+//     }
+// }
+
+// likeOrDislike(["Like", "Dislike", "SuperMan", "Like", "Hello"]);  //like
+// likeOrDislike(["Like", "Dislike"]); //dislike
+// likeOrDislike(["Like", "Like"]) //nothing
+// likeOrDislike(["Like", "Like", "Dislike", "Dislike", "Like"]) //Like 
+
+// Adding Suffixes
+// Write a function that returns n anonymous function which transforms its input by adding a particular suffix at the end
+// Diffuclty: Medium
+// Date: 1/5/2021
+
+
+function addSuffix(suffix) {
+    return function(word) {
+        console.log(word+suffix)
     }
 }
 
-likeOrDislike(["Like", "Dislike", "SuperMan", "Like", "Hello"]);  //like
-likeOrDislike(["Like", "Dislike"]); //dislike
-likeOrDislike(["Like", "Like"]) //nothing
+var add_ly = addSuffix("ly");
+
+add_ly("hopeless")
