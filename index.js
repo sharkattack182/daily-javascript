@@ -154,9 +154,21 @@ function likeOrDislike(array) {
                argumentsArray.push(array[i]);
            }
         }
-        console.log(argumentsArray);
+        
+        for (let t = 0; t < argumentsArray.length; t++) {
+            if(argumentsArray[t] == "Like" && likeState !== "Like") {
+                likeState = "Like"
+            } else if (argumentsArray[t] == "Dislike" && likeState !== "Dislike") {
+                likeState = "Dislike"
+            } else {
+                likeState = "Nothing"
+            }
+            
+        }
+        console.log(likeState)
     }
 }
 
-likeOrDislike(["Like", "Dislike", "SuperMan", "Like", "Hello"]);
-likeOrDislike(["Like", "Dislike"]);
+likeOrDislike(["Like", "Dislike", "SuperMan", "Like", "Hello"]);  //like
+likeOrDislike(["Like", "Dislike"]); //dislike
+likeOrDislike(["Like", "Like"]) //nothing
