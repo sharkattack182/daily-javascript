@@ -181,18 +181,40 @@
 // Solve Time: 5 min
 
 
-function addSuffix(suffix) {
-    return function(word) {
-        console.log(word+suffix)
+// function addSuffix(suffix) {
+//     return function(word) {
+//         console.log(word+suffix)
+//     }
+// }
+
+// var add_ly = addSuffix("ly");
+
+// add_ly("hopeless");
+// add_ly("total");
+
+// var add_less = addSuffix("less");
+
+// add_less("fear");
+// add_less("ruth");
+
+
+// Array of multiples
+// Create a function that takes two numbers as arguments(num, length) and returns an array o multiples of the num until the array length reaches length
+//  Difficulty: Medium
+// Date: 1/16/2021
+// Solve Time: 6 min
+
+function arrayOfMultiples(num, length) {
+    const newArray = [];
+    for (let i = 0; i < length; i++) {
+        const index = i + 1;
+        let arrayItem = index * num;
+        newArray.push(arrayItem);
     }
+
+    console.log(newArray)
 }
 
-var add_ly = addSuffix("ly");
-
-add_ly("hopeless");
-add_ly("total");
-
-var add_less = addSuffix("less");
-
-add_less("fear");
-add_less("ruth");
+arrayOfMultiples(7,5);
+arrayOfMultiples(12,10);
+arrayOfMultiples(17,6);
