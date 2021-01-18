@@ -241,3 +241,25 @@
 // Date: 1/18/2021
 // Difficulty: Medium
 // Solves Time: 
+
+
+function Circle(radius) {
+    this.radius = radius;
+}
+
+Circle.prototype.getArea = function() {
+    const radiusSq = this.radius * this.radius;
+    console.log(Math.PI * radiusSq)
+};
+
+Circle.prototype.getPerimeter = function() {
+    console.log(this.radius * 2 * Math.PI)
+}
+
+
+let circle = new Circle(11);
+circle.getArea();
+
+
+let circle2 = new Circle(4.44)
+circle2.getPerimeter();
