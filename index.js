@@ -204,17 +204,25 @@
 // Date: 1/16/2021
 // Solve Time: 6 min
 
-function arrayOfMultiples(num, length) {
-    const newArray = [];
-    for (let i = 0; i < length; i++) {
-        const index = i + 1;
-        let arrayItem = index * num;
-        newArray.push(arrayItem);
-    }
+// function arrayOfMultiples(num, length) {
+//     const newArray = [];
+//     for (let i = 0; i < length; i++) {
+//         const index = i + 1;
+//         let arrayItem = index * num;
+//         newArray.push(arrayItem);
+//     }
 
-    console.log(newArray)
-}
+//     console.log(newArray)
+// }
 
-arrayOfMultiples(7,5);
-arrayOfMultiples(12,10);
-arrayOfMultiples(17,6);
+// arrayOfMultiples(7,5);
+// arrayOfMultiples(12,10);
+// arrayOfMultiples(17,6);
+
+
+// Triangular Number Sequence
+// Write a function that gives the number of dots with its correstponding triangle number of the sequence
+// Date: 1/17/2021
+// Difficulty: Medium
+// Solves Time:
+
