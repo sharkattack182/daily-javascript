@@ -224,5 +224,13 @@
 // Write a function that gives the number of dots with its correstponding triangle number of the sequence
 // Date: 1/17/2021
 // Difficulty: Medium
-// Solves Time:
+// Solves Time: 2 min
 
+function triangle(n) {
+    var number = n * (n + 1)/2;
+    console.log(number)
+};
+
+triangle(1);
+triangle(6);
+triangle(215);
