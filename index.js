@@ -226,11 +226,18 @@
 // Difficulty: Medium
 // Solves Time: 2 min
 
-function triangle(n) {
-    var number = n * (n + 1)/2;
-    console.log(number)
-};
+// function triangle(n) {
+//     var number = n * (n + 1)/2;
+//     console.log(number)
+// };
 
-triangle(1);
-triangle(6);
-triangle(215);
+// triangle(1);
+// triangle(6);
+// triangle(215);
+
+
+// Make a Circle with OOP
+// Create a circle constructor that create a circle with a radius rovided by an argument. The circles contructed must have two methods getArea and getPerimeter
+// Date: 1/18/2021
+// Difficulty: Medium
+// Solves Time: 
