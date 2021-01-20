@@ -270,3 +270,21 @@
 // Date: 1/20/2021
 // Difficulty: Medium
 // Solves Time: 
+
+function redundant(string) {
+    return function() {
+        console.log(string)
+    }
+
+    
+}
+
+
+const f1 = redundant("apple");
+const f2 = redundant("pear");
+const f3 = redundant("");
+
+f2();
+f3();
+f1();
+
