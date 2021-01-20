@@ -240,26 +240,33 @@
 // Create a circle constructor that create a circle with a radius rovided by an argument. The circles contructed must have two methods getArea and getPerimeter
 // Date: 1/18/2021
 // Difficulty: Medium
+// Solves Time: 10 min
+
+
+// function Circle(radius) {
+//     this.radius = radius;
+// }
+
+// Circle.prototype.getArea = function() {
+//     const radiusSq = this.radius * this.radius;
+//     console.log(Math.PI * radiusSq)
+// };
+
+// Circle.prototype.getPerimeter = function() {
+//     console.log(this.radius * 2 * Math.PI)
+// }
+
+
+// let circle = new Circle(11);
+// circle.getArea();
+
+
+// let circle2 = new Circle(4.44)
+// circle2.getPerimeter();
+
+
+// A Redundant Function
+// write a function that takes in a string and returns a function that returns the string
+// Date: 1/20/2021
+// Difficulty: Medium
 // Solves Time: 
-
-
-function Circle(radius) {
-    this.radius = radius;
-}
-
-Circle.prototype.getArea = function() {
-    const radiusSq = this.radius * this.radius;
-    console.log(Math.PI * radiusSq)
-};
-
-Circle.prototype.getPerimeter = function() {
-    console.log(this.radius * 2 * Math.PI)
-}
-
-
-let circle = new Circle(11);
-circle.getArea();
-
-
-let circle2 = new Circle(4.44)
-circle2.getPerimeter();
