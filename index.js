@@ -269,22 +269,29 @@
 // write a function that takes in a string and returns a function that returns the string
 // Date: 1/20/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 10 min 
 
-function redundant(string) {
-    return function() {
-        console.log(string)
-    }
+// function redundant(string) {
+//     return function() {
+//         console.log(string)
+//     }
 
     
-}
+// }
 
 
-const f1 = redundant("apple");
-const f2 = redundant("pear");
-const f3 = redundant("");
+// const f1 = redundant("apple");
+// const f2 = redundant("pear");
+// const f3 = redundant("");
 
-f2();
-f3();
-f1();
+// f2();
+// f3();
+// f1();
 
+
+
+// Simple Row Sum
+// The challenge displays floyd's triangle and says to create a function that take a number and returns the sum of all numbers in that row
+// Date: 1/21/2021
+// Difficulty: Medium
+// Solves Time: 
