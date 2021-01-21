@@ -295,3 +295,31 @@
 // Date: 1/21/2021
 // Difficulty: Medium
 // Solves Time: 
+
+
+function rowSum(number) {
+    let n = number;
+    let numberCount = 1;
+    let mainArr = [];
+    let sum = 0;
+
+    for (let i = 1; i <= n; i++){
+        let rowArr = []
+        for(let j = 1; j <=i; j++) {
+            rowArr.push(numberCount)
+            numberCount++
+        }    
+        mainArr.push(rowArr)
+    }
+
+    let numberArr = mainArr[number -1]
+    
+    for(let a = 0; a <numberArr.length; a++) {
+        sum += numberArr[a]
+    }
+    console.log(sum)
+}
+
+rowSum(1);
+rowSum(2);
+rowSum(4);
