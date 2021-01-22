@@ -294,32 +294,39 @@
 // The challenge displays floyd's triangle and says to create a function that take a number and returns the sum of all numbers in that row
 // Date: 1/21/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 25 min
 
 
-function rowSum(number) {
-    let n = number;
-    let numberCount = 1;
-    let mainArr = [];
-    let sum = 0;
+// function rowSum(number) {
+//     let n = number;
+//     let numberCount = 1;
+//     let mainArr = [];
+//     let sum = 0;
 
-    for (let i = 1; i <= n; i++){
-        let rowArr = []
-        for(let j = 1; j <=i; j++) {
-            rowArr.push(numberCount)
-            numberCount++
-        }    
-        mainArr.push(rowArr)
-    }
+//     for (let i = 1; i <= n; i++){
+//         let rowArr = []
+//         for(let j = 1; j <=i; j++) {
+//             rowArr.push(numberCount)
+//             numberCount++
+//         }    
+//         mainArr.push(rowArr)
+//     }
 
-    let numberArr = mainArr[number -1]
+//     let numberArr = mainArr[number -1]
     
-    for(let a = 0; a <numberArr.length; a++) {
-        sum += numberArr[a]
-    }
-    console.log(sum)
-}
+//     for(let a = 0; a <numberArr.length; a++) {
+//         sum += numberArr[a]
+//     }
+//     console.log(sum)
+// }
 
-rowSum(1);
-rowSum(2);
-rowSum(4);
+// rowSum(1);
+// rowSum(2);
+// rowSum(4);
+
+
+// Three Arrays
+// Given three arras of imtegers, return the sum of the integers which ar common in all three arrays
+// Date: 1/22/2021
+// Difficulty: Medium
+// Solves Time: 
