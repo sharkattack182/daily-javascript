@@ -307,49 +307,55 @@
 // Given three arras of imtegers, return the sum of the integers which ar common in all three arrays
 // Date: 1/22/2021
 // Difficulty: Medium
-// Solves Time:
+// Solves Time: 25min
 
-function sumCommon(arr1, arr2, arr3) {
-  const newArr = [];
-  for (let i = 0; i < arr1.length; i++) {
-    newArr.push(arr1[i]);
-  }
-  for (let i = 0; i < arr2.length; i++) {
-    newArr.push(arr2[i]);
-  }
-  for (let i = 0; i < arr3.length; i++) {
-    newArr.push(arr3[i]);
-  }
+// function sumCommon(arr1, arr2, arr3) {
+//   const newArr = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     newArr.push(arr1[i]);
+//   }
+//   for (let i = 0; i < arr2.length; i++) {
+//     newArr.push(arr2[i]);
+//   }
+//   for (let i = 0; i < arr3.length; i++) {
+//     newArr.push(arr3[i]);
+//   }
 
-  function count_doubles() {
-    let count = {};
-    let result = [];
-    
-    newArr.forEach(item => {
-        if(count[item]) {
-            count[item] +=1;
-            return
-        }
-        count[item] = 1
-    })
+//   function count_doubles() {
+//     let count = {};
+//     let result = [];
 
-    for(let prop in count) {
-        if(count[prop] >= 2) {
-            result.push(prop)
-        }
-    }
-    
-    let sum = 0;
-    for (let i = 0; i < result.length; i++) {
-        sum += parseInt(result[i]);
-        
-    }
-    console.log(sum)
-    return sum
-  }
+//     newArr.forEach(item => {
+//         if(count[item]) {
+//             count[item] +=1;
+//             return
+//         }
+//         count[item] = 1
+//     })
 
-  count_doubles()
-}
+//     for(let prop in count) {
+//         if(count[prop] >= 2) {
+//             result.push(prop)
+//         }
+//     }
 
-sumCommon([1, 2, 3], [5, 3, 2], [7, 3, 2]);
-sumCommon([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]);
+//     let sum = 0;
+//     for (let i = 0; i < result.length; i++) {
+//         sum += parseInt(result[i]);
+
+//     }
+//     console.log(sum)
+//     return sum
+//   }
+
+//   count_doubles()
+// }
+
+// sumCommon([1, 2, 3], [5, 3, 2], [7, 3, 2]);
+// sumCommon([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]);
+
+// Conenience Store
+// Given a total due and an array representing the amount of change in your pocket, determine whether or not you are able to pay for the item. Change will always be represented in the following order: quarters, dimes, nickels, pennies.
+// Date: 1/23/2021
+// Difficulty: Medium
+// Solves Time: 
