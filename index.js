@@ -358,4 +358,28 @@
 // Given a total due and an array representing the amount of change in your pocket, determine whether or not you are able to pay for the item. Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 // Date: 1/23/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 5 min
+
+function changeEnough([q,d,n,p], amt) {
+    const quarters = q * .25;
+    const dimes = d * .10;
+    const nickels = n * .05;
+    const pennies = p * .01;
+    
+    let sum = quarters + dimes + nickels + pennies;
+    
+    if(sum >= amt) {
+        console.log("true");
+        return true;
+    } else {
+        console.log("false");
+        return false;
+    }
+
+}
+
+changeEnough([2, 100, 0, 0], 14.11);
+changeEnough([0, 0, 20, 5], 0.75);
+changeEnough([30, 40, 20, 5], 12.55);
+changeEnough([10, 0, 0, 50], 3.85);
+changeEnough([1, 0, 5, 219], 19.99)
