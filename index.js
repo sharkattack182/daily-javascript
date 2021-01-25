@@ -360,26 +360,35 @@
 // Difficulty: Medium
 // Solves Time: 5 min
 
-function changeEnough([q,d,n,p], amt) {
-    const quarters = q * .25;
-    const dimes = d * .10;
-    const nickels = n * .05;
-    const pennies = p * .01;
+// function changeEnough([q,d,n,p], amt) {
+//     const quarters = q * .25;
+//     const dimes = d * .10;
+//     const nickels = n * .05;
+//     const pennies = p * .01;
     
-    let sum = quarters + dimes + nickels + pennies;
+//     let sum = quarters + dimes + nickels + pennies;
     
-    if(sum >= amt) {
-        console.log("true");
-        return true;
-    } else {
-        console.log("false");
-        return false;
-    }
+//     if(sum >= amt) {
+//         console.log("true");
+//         return true;
+//     } else {
+//         console.log("false");
+//         return false;
+//     }
 
-}
+// }
 
-changeEnough([2, 100, 0, 0], 14.11);
-changeEnough([0, 0, 20, 5], 0.75);
-changeEnough([30, 40, 20, 5], 12.55);
-changeEnough([10, 0, 0, 50], 3.85);
-changeEnough([1, 0, 5, 219], 19.99)
+// changeEnough([2, 100, 0, 0], 14.11);
+// changeEnough([0, 0, 20, 5], 0.75);
+// changeEnough([30, 40, 20, 5], 12.55);
+// changeEnough([10, 0, 0, 50], 3.85);
+// changeEnough([1, 0, 5, 219], 19.99)
+
+
+// Find the nth Tetreahedral Number
+// A tetrahedron is a pyramid with a triangular base and three sides. A tetrahedral number is a number of items within a tetrahedron. Create a function that takes an integer n and returns the nth tetrahedral number.
+// Date: 1/24/2021
+// Difficulty: Medium
+// Solves Time: 
+
+
