@@ -392,3 +392,13 @@
 // Solves Time: 
 
 
+function tetra(n) {
+    
+var tet = (n * (n + 1) * (n +2)) / 6;
+console.log(tet);
+return tet
+}
+
+tetra(2);
+tetra(5);
+tetra(6);
