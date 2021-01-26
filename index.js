@@ -408,4 +408,17 @@
 // Create a function that takes in an array of numbers and returns the second largest number
 // Date: 1/25/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 6 min
+
+function secondLargest(array) {
+    console.log(array);
+    array.sort(function(a,b) {
+        return a - b;
+    });
+    console.log(array[array.length - 2]);
+}
+
+
+secondLargest([10, 40, 30, 20, 50]);
+secondLargest([25, 143, 89, 13, 105]);
+secondLargest([54, 23, 11, 17, 10]);
