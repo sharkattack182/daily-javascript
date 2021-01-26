@@ -428,23 +428,32 @@
 // Create a function that takes in an array and returns true if all the elements are the same and false otherwise. The array will contain 4 items. 
 // Date: 1/25/2021
 // Difficulty: Medium
+// Solves Time: 11 min
+
+// function testJackpot(array) {
+//     var set = array[0]
+//     if (array.length > 4 || array.length < 4) {
+//         console.log("need four values");
+//     } 
+    
+//     if (set !== array[1] || set !== array[2] || set !== array[3] || set !== array[1]) {
+//         console.log(false);
+//     } else {
+//     console.log(true);
+//     }
+// }
+
+// testJackpot(["@", "@", "@", "@"]);
+// testJackpot(["abc", "abc", "abc", "abc"]);
+// testJackpot(["SS", "SS", "SS", "SS"]);
+// testJackpot(["&&", "&", "&&&", "&&&&"]);
+// testJackpot(["SS", "SS", "SS", "Ss"])
+
+
+// Reverse the number
+// Create a function that takes in an integer and reverses it 
+// Date: 1/25/2021
+// Difficulty: Medium
 // Solves Time: 
 
-function testJackpot(array) {
-    var set = array[0]
-    if (array.length > 4 || array.length < 4) {
-        console.log("need four values");
-    } 
-    
-    if (set !== array[1] || set !== array[2] || set !== array[3] || set !== array[1]) {
-        console.log(false);
-    } else {
-    console.log(true);
-    }
-}
 
-testJackpot(["@", "@", "@", "@"]);
-testJackpot(["abc", "abc", "abc", "abc"]);
-testJackpot(["SS", "SS", "SS", "SS"]);
-testJackpot(["&&", "&", "&&&", "&&&&"]);
-testJackpot(["SS", "SS", "SS", "Ss"])
