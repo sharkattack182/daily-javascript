@@ -456,4 +456,21 @@
 // Difficulty: Medium
 // Solves Time: 
 
+function rev(string) {
+    var str = string.toString();
+    var arr = str.split("");
+    
+    if(arr[0] == "-") {
+        arr.shift();
+    }
 
+    var reOrder = []
+    for (let i = arr.length + 2; i >= 0; i--) {
+        reOrder.push(arr[i])
+    }
+    console.log(reOrder.join(""))
+}
+
+rev(5121);
+rev(69);
+rev(-122157);
