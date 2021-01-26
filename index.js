@@ -389,16 +389,23 @@
 // A tetrahedron is a pyramid with a triangular base and three sides. A tetrahedral number is a number of items within a tetrahedron. Create a function that takes an integer n and returns the nth tetrahedral number.
 // Date: 1/24/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 4 min
 
 
-function tetra(n) {
+// function tetra(n) {
     
-var tet = (n * (n + 1) * (n +2)) / 6;
-console.log(tet);
-return tet
-}
+// var tet = (n * (n + 1) * (n +2)) / 6;
+// console.log(tet);
+// return tet
+// }
 
-tetra(2);
-tetra(5);
-tetra(6);
+// tetra(2);
+// tetra(5);
+// tetra(6);
+
+
+// Find the Second largest number
+// Create a function that takes in an array of numbers and returns the second largest number
+// Date: 1/25/2021
+// Difficulty: Medium
+// Solves Time: 
