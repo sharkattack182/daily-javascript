@@ -454,23 +454,30 @@
 // Create a function that takes in an integer and reverses it 
 // Date: 1/25/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 17 min
 
-function rev(string) {
-    var str = string.toString();
-    var arr = str.split("");
+// function rev(string) {
+//     var str = string.toString();
+//     var arr = str.split("");
     
-    if(arr[0] == "-") {
-        arr.shift();
-    }
+//     if(arr[0] == "-") {
+//         arr.shift();
+//     }
 
-    var reOrder = []
-    for (let i = arr.length + 2; i >= 0; i--) {
-        reOrder.push(arr[i])
-    }
-    console.log(reOrder.join(""))
-}
+//     var reOrder = []
+//     for (let i = arr.length + 2; i >= 0; i--) {
+//         reOrder.push(arr[i])
+//     }
+//     console.log(reOrder.join(""))
+// }
 
-rev(5121);
-rev(69);
-rev(-122157);
+// rev(5121);
+// rev(69);
+// rev(-122157);
+
+
+// Total Volume of All Boxes
+// Given an array of boxes, create a function that returns the total volume of all those boxes combined together. A box is represented by an array with three elements: length, width and height.
+// Date: 1/26/2021
+// Difficulty: Medium
+// Solves Time: 
