@@ -501,6 +501,30 @@
 // You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
 // Date: 1/27/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solves Time: 11 min
+
+function findNemo(string) {
+    var array = string.split(" ");
+    let success = false;
+    let num;
+    for (let i = 0; i < array.length; i++) {
+        const word = array[i];
+        if(word == "Nemo") {
+            success = true;
+            num = i + 1;
+        }
+    }
+
+    if(success === true) {
+        console.log("Nemo was found at " + num + "!");
+    } 
+    else {
+        console.log("Nemo wasnt found :(");
+    }
+}
 
 
+findNemo("I am finding Nemo !");
+findNemo("Nemo is me");
+findNemo("I Nemo am");
+findNemo("Dont touch the butt !");
