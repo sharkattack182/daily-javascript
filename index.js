@@ -480,18 +480,27 @@
 // Given an array of boxes, create a function that returns the total volume of all those boxes combined together. A box is represented by an array with three elements: length, width and height.
 // Date: 1/26/2021
 // Difficulty: Medium
+// Solves Time: 10 min 
+
+// function totalVolume(...arrays) {
+//     let sum = 0;
+//     for (let i = 0; i < arrays.length; i++) {
+//         const element = arrays[i];
+//         sum += element[0] * element[1] * element[2];
+//     };
+//     console.log(sum)
+// }
+
+
+// totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]);
+// totalVolume([2, 2, 2], [2, 1, 1]);
+// totalVolume([1, 1, 1]);
+
+
+// Finding Nemo
+// You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
+// Date: 1/27/2021
+// Difficulty: Medium
 // Solves Time: 
 
-function totalVolume(...arrays) {
-    let sum = 0;
-    for (let i = 0; i < arrays.length; i++) {
-        const element = arrays[i];
-        sum += element[0] * element[1] * element[2];
-    };
-    console.log(sum)
-}
 
-
-totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]);
-totalVolume([2, 2, 2], [2, 1, 1]);
-totalVolume([1, 1, 1]);
