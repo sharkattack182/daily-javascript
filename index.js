@@ -481,3 +481,17 @@
 // Date: 1/26/2021
 // Difficulty: Medium
 // Solves Time: 
+
+function totalVolume(...arrays) {
+    let sum = 0;
+    for (let i = 0; i < arrays.length; i++) {
+        const element = arrays[i];
+        sum += element[0] * element[1] * element[2];
+    };
+    console.log(sum)
+}
+
+
+totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]);
+totalVolume([2, 2, 2], [2, 1, 1]);
+totalVolume([1, 1, 1]);
