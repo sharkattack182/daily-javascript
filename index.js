@@ -534,4 +534,21 @@
 // Create a function that returns the mean of all the digits.
 // Date: 1/31/2021
 // Difficulty: Medium
-// Solves Time: 
+// Solve Time: 7 min
+
+function mean(number) {
+    number = number.toString();
+    var array = number.split("");
+    var sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += parseInt(array[i]);
+    }
+    var mean = sum / array.length;
+    console.log(mean);
+    return mean;
+}
+
+
+mean(42);
+mean(12345);
+mean(777);
